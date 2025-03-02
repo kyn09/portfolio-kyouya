@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kyouya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- パーティクルエフェクト -->
+    <div id="particles-js"></div>
+    
+    <!-- ナビゲーションメニュー -->
+    <header>
+        <div class="container">
+            <h1 class="logo">KYOUYA</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- フルスクリーン動画 -->
+    <section class="video-header">
+        <video autoplay loop muted>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- 作品ギャラリー -->
+    <section id="gallery" class="gallery">
+        <div class="grid">
+            <div class="item"> <img src="images/shape_circle.png" alt="Circle Shape"> </div>
+            <div class="item"> <img src="images/shape_square.png" alt="Square Shape"> </div>
+            <div class="item"> <img src="images/shape_triangle.png" alt="Triangle Shape"> </div>
+            <div class="item"> <img src="images/shape_hexagon.png" alt="Hexagon Shape"> </div>
+            <div class="item"> <img src="images/shape_pentagon.png" alt="Pentagon Shape"> </div>
+            <div class="item"> <img src="images/shape_rhombus.png" alt="Rhombus Shape"> </div>
+        </div>
+    </section>
+    <!-- マウスエフェクト -->
+    <div class="mouse-effect"></div>
+
+    <!-- JavaScriptファイルを読み込む -->
+    <script src="script.js"></script>
+</body>
+</html>

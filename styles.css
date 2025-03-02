@@ -1,0 +1,114 @@
+/* styles.css */
+
+/* 全体の設定 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #041C44, #ffffff);
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  /* ナビゲーションメニュー */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  nav ul li a:hover {
+    color: #ffffff;
+  }
+  
+  /* フルスクリーン動画 */
+  .video-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .video-header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* 作品ギャラリー */
+  .gallery {
+    padding: 50px 20px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .grid .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .grid .item img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* パーティクルエフェクト */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  /* マウスエフェクト */
+  .mouse-effect {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+    z-index: 9999;
+  }
+  
